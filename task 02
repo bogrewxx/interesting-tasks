@@ -1,0 +1,33 @@
+#include <iostream>
+
+int remnum(int number, int remnum) {
+    int result = 0;
+    int multiplier = 1;
+
+    while (number > 0) {
+        int num = number % 10;
+        if (num != remnum) {
+            result += num * multiplier;
+            multiplier *= 10;
+        }
+        number /= 10;
+    }
+
+    return result;
+}
+
+int main() {
+    int number, digit;
+
+    std::cout << "Введіть число: ";
+    std::cin >> number;
+
+    std::cout << "Яку цифру викреслити: ";
+    std::cin >> digit;
+
+    int newNumber = removeDigit(number, digit);
+
+    std::cout << "Результат: " << newNumber << std::endl;
+
+    return 0;
+}
