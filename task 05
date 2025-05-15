@@ -1,0 +1,17 @@
+#include <iostream>
+#include <numeric> 
+
+int main() {
+    int n;
+    std::cout << "Введіть знаменник: ";
+    std::cin >> n;
+
+    std::cout << "Нескоротні дроби з знаменником " << n << ":\n";
+    for (int a = 1; a < n; ++a) {
+        if (std::gcd(a, n) == 1) {
+            std::cout << a << "/" << n << std::endl;
+        }
+    }
+
+    return 0;
+}
