@@ -25,7 +25,7 @@ int main() {
     std::cout << "Яку цифру викреслити: ";
     std::cin >> digit;
 
-    int newnum = remonum(number, digit);
+    int newnum = remnum(number, digit);
 
     std::cout << "Результат: " << newnum << std::endl;
 
