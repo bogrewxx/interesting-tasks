@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void primeFactorization(int n) {
+void dissolution(int n) {
     vector<int> factors;
     
     while (n % 2 == 0) {
@@ -34,6 +34,6 @@ int main() {
     int n;
     cout << "Введіть число: ";
     cin >> n;
-    primeFactorization(n);
+    dissolution(n);
     return 0;
 }
